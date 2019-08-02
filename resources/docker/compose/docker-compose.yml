@@ -1,0 +1,10 @@
+ version: '3'
+ services:
+
+  lab-template:
+   image: thedatasociety/lab-template
+   ports:
+     - 8888:8888
+   
+
+
