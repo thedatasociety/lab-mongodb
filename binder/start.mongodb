@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+
+mkdir ${MONGODB_HOME}/data/db -p
+${MONGODB_HOME}/bin/mongod   --dbpath ${MONGODB_HOME}/data/db &
+
+cd ${MONGODB_HOME}
+git clone https://github.com/mrvautin/adminMongo.git 
+cd adminMongo
+npm install
+npm start &
