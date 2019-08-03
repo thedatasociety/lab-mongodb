@@ -23,3 +23,6 @@ jupyter-server-proxy
 ###############################################################
 #          /jupyter/jupyterlab extensions/kernels              #
 ###############################################################
+
+pymongo
+pprintpp
