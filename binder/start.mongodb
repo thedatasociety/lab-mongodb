@@ -9,4 +9,10 @@ cd ${MONGODB_HOME}
 git clone https://github.com/mrvautin/adminMongo.git 
 cd adminMongo
 npm install
+
+cp ~/resources/configs/adminMongo/app.json    config/
+cp ~/resources/configs/adminMongo/config.json config/
+cp ~/resources/configs/adminMongo/app.js      ./
+
+
 npm start &

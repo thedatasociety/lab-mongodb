@@ -30,12 +30,7 @@ A repository for launching laboratories.
 <!-- MarkdownTOC autolink=true -->
 
 - [Launching this laboratory on a binderhub instance](#launching-this-laboratory-on-a-binderhub-instance)
-  - [Jupyter](#jupyter)
   - [JupyterLab](#jupyterlab)
-  - [Rstudio](#rstudio)
-  - [Shiny](#shiny)
-  - [Nteract](#nteract)
-  - [Stencila](#stencila)
 - [Launch this laboratory locally using Docker](#launch-this-laboratory-locally-using-docker)
   - [Via our Docker image](#via-our-docker-image)
   - [Via repo2docker](#via-repo2docker)
@@ -63,18 +58,6 @@ The list below contains the known binderhub instances.
 
 The list below provides the badges and the hyperlinks for launching one of the specific interfaces in one of the binderhub instances.
     
-
-#### Jupyter 
-  
-  - [![launch @ gke.mybinder.org][badge-jupyter-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=tree)
-
-  - [![launch @ ovh.mybinder.org][badge-jupyter-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=tree)
-
-  - [![launch @ gesis.org][badge-jupyter-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mongodb/master?urlpath=tree)
-
-  - [![launch @ pangeo.org][badge-jupyter-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mongodb/master?urlpath=tree)
-
-
 #### JupyterLab 
   
   - [![launch @ gke.mybinder.org][badge-jupyterlab-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=lab)
@@ -85,48 +68,6 @@ The list below provides the badges and the hyperlinks for launching one of the s
 
   - [![launch @ pangeo.io][badge-jupyterlab-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mongodb/master?urlpath=lab)
       
-#### Rstudio 
-  
-  - [![launch @ gke.mybinder.org][badge-rstudio-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=rstudio)
-
-  - [![launch @ ovh.mybinder.org][badge-rstudio-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=rstudio)
-
-  - [![launch @ gesis.org][badge-rstudio-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mongodb/master?urlpath=rstudio)
-
-  - [![launch @ pangeo.io][badge-rstudio-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mongodb/master?urlpath=rstudio)
-
-      
-#### Shiny 
-  
-  - [![launch @ gke.mybinder.org][badge-shiny-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=shiny)
-
-  - [![launch @ ovh.mybinder.org][badge-shiny-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=shiny)
-
-  - [![launch @ gesis.org][badge-shiny-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mongodb/master?urlpath=shiny)
-
-  - [![launch @ pangeo.io][badge-shiny-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mongodb/master?urlpath=shiny)
-
-      
-#### Nteract 
-  
-  - [![launch @ gke.mybinder.org][badge-nteract-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=nteract)
-
-  - [![launch @ ovh.mybinder.org][badge-nteract-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=nteract)
-
-  - [![launch @ gesis.org][badge-nteract-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mongodb/master?urlpath=nteract)
-
-  - [![launch @ pangeo.io][badge-nteract-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mongodb/master?urlpath=nteract)
-
-
-#### Stencila 
-  
-  - [![launch @ gke.mybinder.org][badge-stencila-gke-mybinder-org]](https://gke.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=stencila)
-
-  - [![launch @ ovh.mybinder.org][badge-stencila-ovh-mybinder-org]](https://ovh.mybinder.org/v2/gh/thedatasociety/lab-mongodb/master?urlpath=stencila)
-
-  - [![launch @ gesis.org][badge-stencila-gesis-org]](https://notebooks.gesis.org/binder/v2/gh/thedatasociety/lab-mongodb/master?urlpath=stencila)
-
-  - [![launch @ pangeo.io][badge-stencila-pangeo-io]](https://binder.pangeo.io/v2/gh/thedatasociety/lab-mongodb/master?urlpath=stencila)
 
 ### Launch this laboratory locally using Docker
 
