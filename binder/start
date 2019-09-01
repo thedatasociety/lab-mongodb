@@ -3,7 +3,7 @@
 
 chmod +x ~/binder/start.mongodb 
 
-# starting mysql in parallel
+# starting mongodb
 ~/binder/start.mongodb   &
 
 
