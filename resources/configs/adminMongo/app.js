@@ -223,6 +223,8 @@ if(app_context !== ''){
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next){
+    console.error(">>>>>>>>>>>>>>>>"+app_context)
+
     var err = new Error('Not Found');
     err.status = 404;
     next(err);

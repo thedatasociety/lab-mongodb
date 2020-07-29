@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+code-server --install-extension joeyyizhao.mongo-runner
+code-server --install-extension mongodb.mongodb-vscode
+
+code-server .  --auth none &

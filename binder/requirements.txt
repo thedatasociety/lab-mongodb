@@ -1,24 +1,21 @@
 ###############################################################
 #          jupyter/jupyterlab extensions/kernels              #
 ###############################################################
-# beakerx (kernels: java, clojure, groovy, scala, kotlin, sql) and dependencies
-beakerx
-py4j
+# # beakerx (kernels: java, clojure, groovy, scala, kotlin, sql) and dependencies
+# beakerx
+# py4j
 
-# sos - script of scripts (multiple kernels)
-sos
-sos-notebook
+# # sos - script of scripts (multiple kernels)
+# sos
+# sos-notebook
 
 #jupyter/jupyterlab extensions
 jupyterlab
-jupyter_contrib_nbextensions
-jupyterlab_launcher
-jupyterlab-git
-jupyterlab_iframe
 ipywidgets
-RISE
+# RISE
 
 jupyter-server-proxy
+jupyter-vscode-proxy
 
 ###############################################################
 #          /jupyter/jupyterlab extensions/kernels              #
