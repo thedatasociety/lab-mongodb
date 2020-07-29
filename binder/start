@@ -5,7 +5,7 @@ chmod +x ~/binder/start.mongodb
 chmod +x ~/binder/start.adminmongo 
 chmod +x ~/binder/start.vscode 
 
-# starting mongo in parallel
+# starting mongodb
 ~/binder/start.mongodb   &
 
 # starting adminmongo in parallel
