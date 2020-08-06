@@ -15,7 +15,7 @@
 
 # Table of contents Jupyter Lab Extension
 echo "Table of contents Jupyter Lab extension install"
-# jupyter labextension install @jupyterlab/toc --no-build 
+jupyter labextension install @jupyterlab/toc --no-build 
 
 # Jupyter/Jupyterlab extension for proxying internal applications
 # echo "Jupyter/Jupyterlab proxy extension install"
@@ -25,7 +25,7 @@ echo "Table of contents Jupyter Lab extension install"
 
 # Building everything up
 echo "Building everything up (jupyter lab build)"
-# jupyter lab build 
+jupyter lab build 
 
 
 ###############################################################
@@ -61,11 +61,18 @@ echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profile
 #             adminmongo installation commands                   #
 ###############################################################
 
-cd    ~/resources/local
+# cd    ~/resources/local
 
-git clone https://github.com/mrvautin/adminMongo.git 
-cd adminMongo
-npm install
+# git clone https://github.com/mrvautin/adminMongo.git 
+# cd adminMongo
+# npm install
+
+
+###############################################################
+#             mongo-express installation                      #
+###############################################################
+# npm install -g npm
+# npm install -g mongo-express
 
 ###############################################################
 #             vscode server installation                      #
@@ -95,4 +102,5 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.bashrc
 echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 
 source ~/.bashrc
+
 

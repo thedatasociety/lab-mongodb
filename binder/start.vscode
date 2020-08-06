@@ -1,6 +1,15 @@
 #!/bin/bash
 
 
+mkdir -p /home/$USER/.config/Code/User
+cp ~/.vscode/keybindings.json /home/$USER/.config/Code/User/
+
+mkdir -p /home/$USER/.config/code-server/User
+cp ~/.vscode/keybindings.json /home/$USER/.config/code-server/User/
+
+mkdir -p /home/$USER/.local/share/code-server/User/
+cp ~/.vscode/keybindings.json /home/$USER/.local/share/code-server/User/
+
 code-server --install-extension joeyyizhao.mongo-runner
 code-server --install-extension mongodb.mongodb-vscode
 

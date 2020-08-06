@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mkdir logs
+
 
 chmod +x ~/binder/start.mongodb 
 chmod +x ~/binder/start.adminmongo 
@@ -9,7 +11,7 @@ chmod +x ~/binder/start.vscode
 ~/binder/start.mongodb   &
 
 # starting adminmongo in parallel
-~/binder/start.adminmongo   &
+# ~/binder/start.adminmongo   &
 
 # starting adminmongo in parallel
 ~/binder/start.vscode   &

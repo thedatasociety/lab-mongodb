@@ -1,4 +1,13 @@
 #!/bin/bash
 
 mkdir ${MONGODB_HOME}/data/db -p
-${MONGODB_HOME}/bin/mongod   --dbpath ${MONGODB_HOME}/data/db &
+nohup  ${MONGODB_HOME}/bin/mongod   --dbpath ${MONGODB_HOME}/data/db  &> ~/logs/mongodb-$MONGODB_VERSION.log &
+
+
+sleep 10
+
+mongorestore --host localhost --port 27017 --db airbnb      --dir ~/resources/datasets/quick-mongo-atlas-datasets/dump/sample_airbnb/
+mongorestore --host localhost --port 27017 --db mflix       --dir ~/resources/datasets/quick-mongo-atlas-datasets/dump/sample_mflix/
+mongorestore --host localhost --port 27017 --db sales       --dir ~/resources/datasets/quick-mongo-atlas-datasets/dump/sample_supplies/
+mongorestore --host localhost --port 27017 --db weatherdata --dir ~/resources/datasets/quick-mongo-atlas-datasets/dump/sample_weatherdata/
+mongorestore --host localhost --port 27017 --db geospatial --dir ~/resources/datasets/quick-mongo-atlas-datasets/dump/sample_geospatial/

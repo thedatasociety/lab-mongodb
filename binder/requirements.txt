@@ -22,4 +22,5 @@ jupyter-vscode-proxy
 ###############################################################
 
 pymongo
+imongo-kernel
 pprintpp
