@@ -11,7 +11,7 @@
 
 #jupyter/jupyterlab extensions
 jupyterlab
-ipywidgets
+# ipywidgets
 # RISE
 
 jupyter-server-proxy
