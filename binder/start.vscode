@@ -11,6 +11,6 @@ mkdir -p /home/$USER/.local/share/code-server/User/
 cp ~/.vscode/keybindings.json /home/$USER/.local/share/code-server/User/
 
 code-server --install-extension joeyyizhao.mongo-runner
-code-server --install-extension mongodb.mongodb-vscode
+# code-server --install-extension mongodb.mongodb-vscode
 
 code-server .  --auth none &
