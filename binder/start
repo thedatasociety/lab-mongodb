@@ -13,7 +13,7 @@ chmod +x ~/binder/start.vscode
 # starting adminmongo in parallel
 # ~/binder/start.adminmongo   &
 
-# starting adminmongo in parallel
+# starting vscode in parallel
 ~/binder/start.vscode   &
 
 
