@@ -21,6 +21,6 @@ jupyter-vscode-proxy
 #          /jupyter/jupyterlab extensions/kernels              #
 ###############################################################
 
-pymongo
+pymongo==3.10.0
 imongo-kernel
 pprintpp
