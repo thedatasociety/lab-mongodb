@@ -116,7 +116,7 @@ See the [repo2docker](https://github.com/jupyter/repo2docker) documentation for 
 git clone https://github.com/thedatasociety/lab-mongodb.git
 ```
 
-2.  Enter the repository folder (`cd lab-mariadb`) and create a new Python virtual environment (venv):
+2.  Enter the repository folder (`cd lab-mongodb`) and create a new Python virtual environment (venv):
 ```
 python3 -m venv venv
 ``` 
