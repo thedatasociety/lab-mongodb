@@ -28,9 +28,9 @@ echo "export MONGODB_HOME=${MONGODB_HOME}"       >> ~/.bashrc
 echo "export MONGODB_HOME=${MONGODB_HOME}"       >> ~/.profile
 
 wget  https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz -q  && \
-tar -xvf mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}.tgz >/dev/null                        && \
-rm       mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}.tgz                                   && \
-mv       mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}        mongodb-${MONGODB_VERSION}      
+tar -xvf mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz >/dev/null                        && \
+rm       mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz                                   && \
+mv       mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}        mongodb-${MONGODB_VERSION}      
 
 # adding bin and sbin to $path
 echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.bashrc
