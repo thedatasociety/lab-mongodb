@@ -11,15 +11,15 @@ cp ~/.vscode/* /home/$USER/.local/share/code-server/User/
 # Installing vs code extensions
 ###############################################
 
-code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
+# code-server --force --install-extension 'ms-toolsai.jupyter' && sleep 1
 code-server --force --install-extension 'pkief.material-icon-theme' && sleep 1
 
 # open extension gallery
 export SERVICE_URL=https://open-vsx.org/vscode/gallery
 export ITEM_URL=https://open-vsx.org/vscode/item
 
-code-server --install-extension 'joeyyizhao.mongo-runner' && sleep 1
-code-server --install-extension 'mongodb.mongodb-vscode' && sleep 1
+# code-server --install-extension 'joeyyizhao.mongo-runner' && sleep 1
+# code-server --install-extension 'mongodb.mongodb-vscode' && sleep 1
 code-server --install-extension ./resources/vscode/mongodb-vscode-0.1.1.vsix  && sleep 1
 ###############################################
 # Starting code-server

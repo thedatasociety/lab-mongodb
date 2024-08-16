@@ -4,9 +4,10 @@
 #          jupyter/jupyterlab extensions/kernels              #
 ###############################################################
 
-# Building everything up
-echo "Building everything up (jupyter lab build)"
-jupyter lab build 
+# Building jupyter lab 
+echo "Building jupyter lab..."
+# jupyter lab build 
+echo "Finished building jupyter lab"
 
 ###############################################################
 #             moving to a local installation folder           #
@@ -16,25 +17,87 @@ mkdir ~/resources/local
 cd    ~/resources/local
 
 ###############################################################
-#             mongodb installation commands                   #
+#             MongoDB installation commands                   #
 ###############################################################
 
-export MONGODB_VERSION=7.0.11
+echo "Installing MongoDB..."
+
+export MONGODB_VERSION=7.0.12
 echo "export MONGODB_VERSION=${MONGODB_VERSION}" >> ~/.bashrc
 echo "export MONGODB_VERSION=${MONGODB_VERSION}" >> ~/.profile
 
 export MONGODB_HOME=$(pwd)/mongodb-${MONGODB_VERSION}
 echo "export MONGODB_HOME=${MONGODB_HOME}"       >> ~/.bashrc
 echo "export MONGODB_HOME=${MONGODB_HOME}"       >> ~/.profile
-
-wget  https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz -q  && \
-tar -xvf mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz >/dev/null                        && \
-rm       mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz                                   && \
+wget  https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz -q && \
+tar -xvf mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz >/dev/null                       && \
+rm       mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}.tgz                                  && \
 mv       mongodb-linux-x86_64-ubuntu2204-${MONGODB_VERSION}        mongodb-${MONGODB_VERSION}      
 
 # adding bin and sbin to $path
 echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.bashrc
 echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profile
+
+echo "Finished installing MongoDB!"
+
+
+###############################################################
+#       MongoDB Command Line Database Tools                   #
+###############################################################
+
+echo "Installing MongoDB CLI Tools..."
+export OS_LABEL=ubuntu2204-x86_64
+export MONGODB_CLITOOLS_VERSION=100.10.0
+echo "export MONGODB_CLITOOLS_VERSION=${MONGODB_CLITOOLS_VERSION}" >> ~/.bashrc
+echo "export MONGODB_CLITOOLS_VERSION=${MONGODB_CLITOOLS_VERSION}" >> ~/.profile
+
+export MONGODB_CLITOOLS_HOME=$(pwd)/mongodb-database-tools-${MONGODB_CLITOOLS_VERSION}
+echo "export MONGODB_CLITOOLS_HOME=${MONGODB_CLITOOLS_HOME}"       >> ~/.bashrc
+echo "export MONGODB_CLITOOLS_HOME=${MONGODB_CLITOOLS_HOME}"       >> ~/.profile
+      
+wget  https://fastdl.mongodb.org/tools/db/mongodb-database-tools-ubuntu2204-x86_64-${MONGODB_CLITOOLS_VERSION}.tgz -q && \
+tar -xvf mongodb-database-tools-${OS_LABEL}-${MONGODB_CLITOOLS_VERSION}.tgz >/dev/null                       && \
+rm       mongodb-database-tools-${OS_LABEL}-${MONGODB_CLITOOLS_VERSION}.tgz                                  && \
+mv       mongodb-database-tools-${OS_LABEL}-${MONGODB_CLITOOLS_VERSION} mongodb-database-tools-${MONGODB_CLITOOLS_VERSION}      
+
+# adding bin and sbin to $path
+echo "export PATH=\$PATH:\$MONGODB_CLITOOLS_HOME/bin"  >> ~/.bashrc
+echo "export PATH=\$PATH:\$MONGODB_CLITOOLS_HOME/bin"  >> ~/.profile
+
+echo "Finished installing MongoDB CLI Tools!"
+
+
+###############################################################
+#                      MongoSH Tool                           #
+###############################################################
+
+echo "Installing MongoSH Tool..."
+export OS_LABEL=linux-x64
+export MONGOSH_VERSION=2.2.15
+echo "export MONGOSH_VERSION=${MONGOSH_VERSION}" >> ~/.bashrc
+echo "export MONGOSH_VERSION=${MONGOSH_VERSION}" >> ~/.profile
+
+export MONGOSH_HOME=$(pwd)/mongosh-${MONGOSH_VERSION}
+echo "export MONGOSH_HOME=${MONGOSH_HOME}"       >> ~/.bashrc
+echo "export MONGOSH_HOME=${MONGOSH_HOME}"       >> ~/.profile
+      
+wget https://downloads.mongodb.com/compass/mongosh-${MONGOSH_VERSION}-${OS_LABEL}.tgz -q && \
+tar -xvf mongosh-${MONGOSH_VERSION}-${OS_LABEL}.tgz >/dev/null                       && \
+rm       mongosh-${MONGOSH_VERSION}-${OS_LABEL}.tgz                                  && \
+mv       mongosh-${MONGOSH_VERSION}-${OS_LABEL} mongosh-${MONGOSH_VERSION}      
+# adding bin and sbin to $path
+echo "export PATH=\$PATH:\$MONGOSH_HOME/bin" >> ~/.bashrc
+echo "export PATH=\$PATH:\$MONGOSH_HOME/bin" >> ~/.profile
+
+echo "alias mongo=mongosh" >> ~/.bashrc
+echo "alias mongo=mongosh" >> ~/.profile
+echo "alias mongo=mongosh" >> ~/.bash_aliases
+echo "alias mongo=mongosh" >> ~/.alias
+
+
+
+echo "Finished installing MongoSH Tool!"
+
 
 ###############################################################
 #             adminmongo installation commands                   #
@@ -59,6 +122,9 @@ echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profile
 
 cd    ~/resources/local
 
+echo "Installing vscode server..."
+
+
 export CODE_SERVER_VERSION=3.3.0
 echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.bashrc
 echo "export CODE_SERVER_VERSION=${CODE_SERVER_VERSION}" >> ~/.profile
@@ -82,4 +148,5 @@ echo "export PATH=\$PATH:\$CODE_SERVER_HOME/bin"   >> ~/.profile
 
 source ~/.bashrc
 
+echo "Finished installing vscode server..."
 

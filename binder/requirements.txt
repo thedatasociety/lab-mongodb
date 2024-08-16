@@ -10,6 +10,6 @@ jupyterlab-rise
 ipywidgets
 
 # lab-related packages
-pymongo==3.10.0
+pymongo
 imongo-kernel
 pprintpp
