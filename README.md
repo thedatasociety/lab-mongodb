@@ -79,19 +79,18 @@ python3 -m venv venv
 3. Activate your virtual environment (you may do this again later if you want to restart your container):
 ```
 source venv/bin/activate
-
 ```
 
 4. Install/upgrade required Python libs using pip:
 ```
 pip install jupyter-repo2docker pip -U
-
 ```
 
 5. Launch the Docker container using `repo2docker` directly from the remote repository:
 
 ```bash
-jupyter-repo2docker -p 8888:8888 https://github.com/thedatasociety/lab-mongodb jupyter lab --ip 0.0.0.0 --NotebookApp.token='mytoken'
+jupyter-repo2docker -p 8888:8888 https://github.com/thedatasociety/lab-mongodb \ 
+                    jupyter lab --ip 0.0.0.0 --NotebookApp.token='mytoken'
 ```
 Each interface will be available at a specific path, as follows:
 
