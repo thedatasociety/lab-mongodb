@@ -6,7 +6,7 @@
 
 # Building jupyter lab 
 echo "Building jupyter lab..."
-# jupyter lab build 
+jupyter lab build 
 echo "Finished building jupyter lab"
 
 ###############################################################
